@@ -8,6 +8,7 @@ import java.io.IOException;
 
 public class HaikuWriter {
 
+    //
     public void haikuStorage(HaikuPoem poem) {
         try {
             File file = new File("HaikuStorage/haikustorage.txt");

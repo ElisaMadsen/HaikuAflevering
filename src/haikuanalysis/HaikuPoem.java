@@ -18,6 +18,7 @@ public class HaikuPoem {
         this.id = counter;
     }
 
+    //Getters to check the lines in HaikuAnalysis isPoemCorrect method
     public String getFirstLine() {
         return firstLine;
     }

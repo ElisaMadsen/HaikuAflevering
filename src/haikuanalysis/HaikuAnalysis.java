@@ -2,8 +2,10 @@ package haikuanalysis;
 
 public class HaikuAnalysis {
 
+    //Array with all vowels
     public char[] vowels = {'a', 'A', 'e', 'E', 'I', 'i', 'O', 'o', 'U', 'u', 'Y', 'y', 'Æ', 'æ', 'Ø', 'ø', 'Å', 'å'};
 
+    //Checking if line input from user contains vowels
     public boolean hasFiveVowels(String line){
         char [] lineInputFromUser = line.toCharArray();
         int vowelCounter = 0;
@@ -17,6 +19,7 @@ public class HaikuAnalysis {
         return vowelCounter == 5;
     }
 
+    //Checking if line input from user contains vowels
     public boolean hasSevenVowels(String line){
         char[] lineInputFromUser = line.toCharArray();
         int vowelCounter = 0;
@@ -30,6 +33,7 @@ public class HaikuAnalysis {
         return vowelCounter == 7;
     }
 
+    //Checking if the lines from user contains 5-7-5 syllables
     public boolean isPoemCorrect(HaikuPoem userPoem){
         String firstLine = userPoem.getFirstLine();
         String secondLine = userPoem.getSecondLine();
