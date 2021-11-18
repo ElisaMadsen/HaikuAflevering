@@ -15,6 +15,7 @@ public class HaikuApplication {
         HaikuApplication app = new HaikuApplication();
         app.menu.welcome();
 
+        //If Else to give the player the opportunity to create poem or quit
         Scanner sc = new Scanner(System.in);
         while (true) {
             System.out.println("* Enter 1 to create a haiku poem\n* Enter 2 to quit");
@@ -28,10 +29,10 @@ public class HaikuApplication {
 
                 HaikuPoem poem = new HaikuPoem(author, firstLine, secondLine, thirdLine);
 
+        //If Else to either store the poem or not
                 boolean saveHaiku = app.haikuAnalysis.isPoemCorrect(poem);
                 if (saveHaiku) {
                     app.haikuWriter.haikuStorage(poem);
-
                 }
             } else if (quitOrContinue == 2) {
                 System.out.println("See you next time! 👋");

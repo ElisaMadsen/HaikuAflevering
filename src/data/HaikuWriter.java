@@ -8,7 +8,7 @@ import java.io.IOException;
 
 public class HaikuWriter {
 
-    //
+    //Creating storage for correct poems
     public void haikuStorage(HaikuPoem poem) {
         try {
             File file = new File("HaikuStorage/haikustorage.txt");
@@ -17,6 +17,7 @@ public class HaikuWriter {
             filewriter.close();
 
         } catch (IOException e) {
+            System.out.println("File not found");
             e.printStackTrace();
         }
     }
